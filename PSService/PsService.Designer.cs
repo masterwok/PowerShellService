@@ -1,6 +1,6 @@
-﻿namespace ReverseShellService
+﻿namespace PSService
 {
-    partial class ReverseShellService
+    partial class PSService
     {
         /// <summary> 
         /// Required designer variable.

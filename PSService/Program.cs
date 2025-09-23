@@ -1,6 +1,6 @@
 ﻿using System.ServiceProcess;
 
-namespace ReverseShellService
+namespace PSService
 {
     internal static class Program
     {
@@ -9,7 +9,7 @@ namespace ReverseShellService
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-                new ReverseShellService(args)
+                new PSService(args)
             };
             ServiceBase.Run(ServicesToRun);
         }

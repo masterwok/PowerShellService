@@ -2,14 +2,14 @@
 using System.ServiceProcess;
 using System.Threading;
 
-namespace ReverseShellService
+namespace PSService
 {
-    public partial class ReverseShellService : ServiceBase
+    public partial class PSService : ServiceBase
     {
         private readonly string[] autoArgs;
         private Thread thread;
 
-        public ReverseShellService(string[] autoArgs)
+        public PSService(string[] autoArgs)
         {
             InitializeComponent();
 
