@@ -18,7 +18,7 @@ sc.exe start PSService
 
 Replace `<encoded_powershell>` with your encoded powershell.
 
-## Reverse Shell Example
+### Reverse Shell Example
 
 1. Encode your Powershell script
 
