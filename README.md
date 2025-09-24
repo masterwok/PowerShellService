@@ -4,6 +4,13 @@ A very basic Windows service that will run the encoded powershell provided as an
 
 I created this to simply have an alternative to `msfvenom` payload `exe-service` and to have the ability to have a dynamic powershell payload.
 
+Please note: This could also just easily be done as the following without use of this service:
+
+```powershell
+sc.exe create SERVICE_NAME binpath= "C:\Windows\System32\cmd.exe /c powershell.exe -nop -w hidden -enc PS_ENCODING"
+sc.exe start SERVICE_NAME
+```
+
 ## Build
 
 Simply clone and build the project on Windows. Release binaries were built with Visual Studio 2022.
